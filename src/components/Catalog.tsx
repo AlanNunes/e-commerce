@@ -20,14 +20,17 @@ function Catalog() {
     <div>
       <h1>Catalog</h1>
       {isLoading && <Loading />}
-      {catalog.map((c) => (
-        <CatalogItem
-          key={c.id}
-          id={c.id}
-          name={c.name}
-          price={c.price}
-        ></CatalogItem>
-      ))}
+      <div className="catalog">
+        {catalog.map((c) => (
+          <CatalogItem
+            key={c.id}
+            id={c.id}
+            name={c.name}
+            imgUri={c.imgUri}
+            price={c.price}
+          ></CatalogItem>
+        ))}
+      </div>
     </div>
   );
 }
