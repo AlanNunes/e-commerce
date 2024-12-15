@@ -24,6 +24,7 @@ function CatalogItem({ id, name, imgUri, price }: Props) {
             dispatch(
               addItem({
                 id: id,
+                name: name,
                 price: price,
               })
             );
