@@ -43,7 +43,7 @@
 
 .catalog-item-price {
   font-size: 16px;
-  color: #2ae424;
+  color: #d3d3d3;
   margin: 10px;
 }
 
@@ -56,11 +56,60 @@
 }
 
 .catalog-item-buy-now {
-  background-color: #1fd328;
+  background-color: #009107;
   color: #fff;
 }
 
-.catalog-item-add-to-chart {
+.catalog-item-add-to-cart {
   background-color: #3498db;
   color: #fff;
+}
+
+.catalog-page-cart-menu { 
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.cart-page-remove-item {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(172, 34, 34);
+  font-size: small;
+}
+
+.cart-page-remove-all {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(172, 34, 34);
+  font-size: large;
+}
+
+.cart-page-confirm {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #009107;
+  font-size: large;
+}
+
+.cart-page-items {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px;
+}
+
+.cart-page-item {
+  flex: 1 1 calc(33.33%);
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.233);
+  border-radius: 10px;
+  background-color: #163f3f;
 }

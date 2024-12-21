@@ -16,10 +16,12 @@ function CatalogItem({ id, name, imgUri, price }: Props) {
       <div className="catalog-item-img">
         <img src={imgUri} />
       </div>
-      <div className="catalog-item-price">R$ {price}</div>
+      <div className="catalog-item-price">
+        $ {new Intl.NumberFormat("en-US").format(price)}
+      </div>
       <div>
         <button
-          className="catalog-item-add-to-chart"
+          className="catalog-item-add-to-cart"
           onClick={() => {
             dispatch(
               addItem({
@@ -30,7 +32,7 @@ function CatalogItem({ id, name, imgUri, price }: Props) {
             );
           }}
         >
-          add to chart
+          add to cart
         </button>
         <button className="catalog-item-buy-now">buy now</button>
       </div>
